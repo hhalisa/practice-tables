@@ -1,0 +1,15 @@
+BEGIN TRANSACTION;
+
+SELECT *
+FROM client;
+
+SELECT *
+FROM vehicle;
+
+SELECT *
+FROM appointment;
+
+SELECT *
+FROM service;
+
+ROLLBACK TRANSACTION;
