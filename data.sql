@@ -11,9 +11,9 @@ VALUES
 (11202, 'mary', 'morris', 5558389228),
 (11172, 'dennis', 'lupito', 3327789601),
 (11197, 'ashley', 'hudson', 6771124435),
-(11534, 'barron', 'bodillo', 733246118),
+(11534, 'barron', 'bodillo', 7332461182),
 (11390, 'juan', 'brown', 6678223190),
-(11153, 'joe', 'johnson', 555220987)
+(11153, 'joe', 'johnson', 5552209873)
 ;
 
 insert into vehicle( vid, cid, make, model, year, milage)
@@ -32,12 +32,6 @@ VALUES
 (3571, 11153, 'acura', 'integra', 1994, 142378)
 ;
 
-insert into appointment( appid, vid, sid, time, date)
-VALUES
-('F889', 2763, 20, '09:00:00', '2019-01-15'),
-('F142', 6756, 11, '12:00:00', '2020-03-02')
-;
-
 insert into service( sid, type, price)
 VALUES
 (10, 'oil change', 50),
@@ -45,6 +39,20 @@ VALUES
 (13, 'tire rotation', 10),
 (15, 'brake pad replacement', 75),
 (20, 'state inspection', 75)
+;
+
+insert into appointment( appid, vid, sid, time, date)
+VALUES
+('F889', 2763, 20, '09:00:00', '2019-01-15'),
+('F142', 6756, 10, '12:00:00', '2020-03-02'),
+('F143', 6756, 11, '12:00:00', '2020-03-02'),
+('F144', 6756, 13, '12:00:00', '2020-03-02'),
+('F201', 6124, 20, '10:00:00', '2020-03-09'),
+('F267', 2995, 10, '02:00:00', '2020-03-12'),
+('F268', 2995, 15, '02:00:00', '2020-03-12'),
+('F301', 2863, 10, '03:30:00', '2020-03-21'),
+('F302', 2863, 11, '03:30:00', '2020-03-21')
+
 ;
 
 COMMIT TRANSACTION;
